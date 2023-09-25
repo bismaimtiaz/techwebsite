@@ -1,0 +1,65 @@
+.header-wrapper a{
+margin-right: 30px;
+color: var(   --bs-gray-100);
+font-weight: 600;
+font-size: 16px;
+cursor: pointer;
+}
+.header-wrapper a:hover{
+    opacity: 0.8;
+
+    }
+.header-wrapper a i{
+    margin-left: 5px;
+    font-size: 10px;
+    }
+   
+.header-wrapper{
+    padding: 50px 100px;
+    margin-bottom: -133px;
+    z-index: 9;
+    
+   
+}
+/* Banner Css Start */
+.banner{
+    background-image: url(../images/bg1.png);
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    color: var(--white);
+    width: 100%;
+   
+}
+.banner-wrapper{
+    padding: 200px 250px;
+    text-align: center;
+    color: var(--bs-gray-100);
+}
+.banner-wrapper img{
+    position: absolute;
+    max-width: 20%;
+    top:340px
+}
+.banner-wrapper p{
+font-weight: 600;
+padding: 20px 0;
+}
+.banner-wrapper button{
+  padding: 20px 20px;
+  border-radius: 10px;
+  border:none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+ @media screen and (max-width: 768px) {
+   .list{
+    display: none;
+   }
+   .header-wrapper{
+    padding: 30px 10px;}
+    .banner-wrapper{
+        padding: 150px 50px;}
+} 
