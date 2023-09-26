@@ -115,12 +115,18 @@ font-weight: 600;
 .cards p{
     padding:10px 0;
 }
-.cards a{
-   
+.link{
+    position: relative; 
     font-weight: 600;
     cursor: pointer;
+    transition: border-bottom 0.2s ease;
   
 }
+
+.cards a:hover{
+        border-bottom: 1px solid ; }
+  
+
 
 .link i{
     font-size: 12px;
