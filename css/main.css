@@ -1,5 +1,5 @@
 .header-wrapper  a{
-    margin-right: 20px;
+    margin-right: 5%;
 color: var(   --text-color);
 font-weight: 700;
 font-size: 17px;
@@ -38,22 +38,30 @@ cursor: pointer;
 }
 .banner-wrapper{
     text-align: center;
-    padding: 200px 0;
+    padding: 15% 0;
     color: var(--text-color);
 }
 .banner-wrapper h1{
-    padding: 10px 250px;
+    position: relative; 
+    display: inline-block; 
+    padding: 2% 20%;
     color: var(--text-color);
 }
-.banner-wrapper img{
-    position: absolute;
-    max-width: 15%;
-    top:340px;
-    right:438px
+.banner-wrapper h1::after {
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    bottom: 20px; 
+    right: 350px; 
+    background-image: url(../images/line.svg); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 20%; 
+    height: 4%;
 }
 .banner-wrapper p{
 font-weight: 600;
-padding: 20px 340px;
+padding: 2% 28%;
 font-size: 24px;
 color: var(--text-color);
 
@@ -65,9 +73,7 @@ margin: 20px 0;
 
 }
  @media screen and (max-width: 768px) {
-    h1{
-        font-size: 45px;
-    }
+   
    .list{
     display: none;
    }
@@ -75,36 +81,34 @@ margin: 20px 0;
     justify-content: flex-start;
     padding: 0 30px;
     }
-    .banner-wrapper h1{
-        padding: 0 150px;
-       
-    }
-    .banner-wrapper img{
-       top:300px;
-        right:230px
-    }
+   
     .banner-wrapper p{
         padding: 20px 140px;
  }
+.banner-wrapper h1::after {
+    bottom: 10px; 
+    right: 220px; 
+}
 } 
 @media screen and (max-width: 425px) {
-    h1{
-        font-size: 33px;
-    }
+   
     .btn{
-        padding: 24px 10px;
+        padding: 18px 10px;
     }
     .banner-wrapper h1{
         padding: 0 50px;
        
     }
-    .banner-wrapper img{
-       top:270px;
-        right:100px;
-        max-width:25%
-    }
+
     .banner-wrapper p{
         padding: 20px 40px;
  }
+ .banner-wrapper h1::after {
+    bottom: 0px; 
+    right: 90px; 
+}
+.banner-wrapper{
+  
+    padding: 25% 0;
 } 
-
+}
