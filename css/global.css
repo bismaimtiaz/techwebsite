@@ -1,31 +1,46 @@
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: "Urbanist", sans-serif;
-    font-size: 0.85rem;
-}
   :root {
-    --bs-gray-100: #fefefe;
-    --bs-gray-200: #f6f7f9;
-    --bs-gray-300: #cacaca;
-    --bs-gray-400: #aab0bc;
-    --bs-gray-500: #959ca9;
-    --bs-gray-600: #60697b;
-    --bs-gray-700: #2f353a;
-    --bs-gray-800: #21262c;
-    --bs-gray-900: #1e2228;
-  
-
+    --primary-color: #343f52;
+    --secondary-color: #60697B;
+    --text-color: #ffff;
+    --accent-color: #E668B3;
+    --orange-color: #f78b77;
+    --green-color: #45c4a0;
+    --Urbanist: "Urbanist", sans-serif;
 }
+body{
+    font-family: var(--u);
+    color: var(--primary-color);
+   
+ }
 h1{
-    font-size: 65px;
-    font-weight: 600;
+    font-size: 60px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 33px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 19px;
 }
 p{
-    font-size: 24px;
+    font-size: 17px;
+}
+.btn{
+    padding: 10px 24px;
+    font-size: 17px;
 }
 .flex-1{
     flex: 1;
@@ -36,13 +51,6 @@ p{
 }
 .d-flex{
     display: flex;
-}
-.position-relative{
-    position: relative;
-
-}
-.position-absolute{
-    position: absolute;
 }
 .align-item-center{
     align-items: center;
@@ -58,4 +66,33 @@ p{
 }
 .justify-content-around{
     justify-content: space-around;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+  flex: 3;
+}
+.padding-50px{
+    padding: 50px 10px;
+
+}
+.padding-10px{
+  padding: 10px 0px;
+
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.col-flex{
+  flex-direction: column;
 }
