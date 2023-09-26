@@ -34,7 +34,7 @@ cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-   
+  
 }
 .banner-wrapper{
     text-align: center;
@@ -72,6 +72,9 @@ margin: 20px 0;
   border:none;
 
 }
+.grid{
+    margin-top: -130px;
+}
 
 .cards {
     width: 258px;
@@ -80,9 +83,9 @@ margin: 20px 0;
     border: 1px solid var(--text-color);
     margin-bottom: 10px;
     border-radius: 20px;
-    padding: 10px 10px;
+    padding: 10px 20px;
     box-shadow:10px ;
-    border: solid;
+  
     
   
 }
@@ -92,13 +95,17 @@ margin: 20px 0;
 }
 .cards h4{
 padding: 10px 10px;
+font-weight: 600;
 }
 .cards a{
     font-weight: 600;
+  
 }
 
 .link i{
-    font-size: 20px;
+    font-size: 12px;
+    padding: 5px;
+    
   
 }
 
