@@ -93,7 +93,7 @@ color: var(--text-color);
 }
 
 .cards {
-    width: 258px;
+    width: 278px;
     height: 321px;
     background-color: var(--text-color);
     border: 1px solid var(--text-color);
