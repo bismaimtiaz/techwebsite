@@ -27,6 +27,11 @@
     --btn:17px;
 
 }
+li{
+    text-decoration: none;
+    list-style: none;
+
+}
 body{
     font-family: var(--Urbanist);
     color: var(--primary-color);
@@ -63,6 +68,7 @@ a{
     padding: 20px 24px;
     font-size: var(--btn);
     cursor: pointer;
+    border: none;
 
 }
 .container{
