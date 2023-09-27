@@ -1,181 +1,299 @@
-.header-wrapper  a{
-    margin-right: 5%;
-color: var(   --text-color);
-font-weight: 700;
-font-size: 17px;
-cursor: pointer;
+.header-wrapper{
+margin-left: 60px;
+margin-right: 60px;
+padding-left: 15px;
+padding-right :15px;
+}
+.header-wrapper a{
+ padding: 24px 20px;
+ letter-spacing: normal;
+ cursor: pointer;
+}
+.fa-chevron-down{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.list1{
+    margin-left:45px ;
+    color: var(--text-color);
+    font-size :17px;
+    font-weight :600;
+    
+}
+.list2{
+    color: var(--text-color);
+    font-size :17px;
+    font-weight :600;
+
+}
+.bar{
+    position: relative;
+    color: var(--text-color);
+    font-size: 20px;
+    display: none;
+}
+.header-wrapper a:hover{
+    opacity: 0.6;
 }
 
-.header-wrapper a:hover{
-    opacity: 0.8;
 
-    }
-.header-wrapper a i{
-    margin-left: 5px;
-    font-size: 12px;
-  
-   
-    }
-    .header-wrapper img{
-    max-width: 100%;
-       
-    }
-   
 .header-wrapper{
-    padding: 50px 0;
-    margin-bottom: -133px;
-    z-index: 9;
-    
-   
+    padding-top: 16px;
+    margin-bottom: -100px;
+    z-index: 9;   
 }
 /* Banner Css Start */
 .banner{
     background-image: url(../images/bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
-   max-width: 100%;
-
-
+   position: relative;
+   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 88%, 83% 100%, 21% 100%, 0 89%, 0 0);
+   z-index: -1; 
+   min-height: 100vh;
 }
 .banner-wrapper{
     text-align: center;
-    padding: 15% 0;
+    padding: 13.8% 0;
     color: var(--text-color);
 }
 .banner-wrapper h1{
     position: relative; 
     display: inline-block; 
-    padding: 2% 20%;
+    padding: 0 25%;
     color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height:clamp(43px,5vw,69px);
 }
 .banner-wrapper h1::after {
     content: ""; 
     display: block; 
     position: absolute; 
-    bottom: 20px; 
-    right: 350px; 
+    bottom: 0; 
+    right: 385px; 
     background-image: url(../images/line.svg); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat;
-    width: 20%; 
-    height: 4%;
+    width: 15%; 
+    height: 6%;
 }
 .banner-wrapper p{
-font-weight: 600;
+font-weight: 500;
 padding: 2% 28%;
 font-size: 24px;
+line-height: 2rem;
 color: var(--text-color);
-
 }
 .banner-wrapper button{
-  border-radius: 10px;
-  margin: 20px 0;
-  border:none;
-  cursor: pointer;
-  background-color: var(--text-color);
-  transition:1.2s ease ;
-  -webkit-transition:1.2s ease ;
-
+       border-radius: 8px;
+       font-weight: 600;
+       border:none;
+       background-color: var(--text-color);
+  
+       margin-bottom: 20px;
 }
-.banner-wrapper button:hover{
-   
-   padding: 26px;
-    
-    }
-      
-      
-      
-.grid{
+
+
+
+
+.card-row{
     margin-top: -130px;
     z-index: 100px;
 }
-
-.cards {
-    width: clamp(278px ,5vw ,358px);
-    height: 321px;
+.card{
+    width: 280px;
+    height: 332px;
+}
+.card-body{
     background-color: var(--text-color);
-    border: 1px solid var(--text-color);
-    margin-bottom: 30px;
-    border-radius: 10px;
-    padding: 10px 25px;
-    box-shadow: 1px 2px 1px 1px #D3D3D3;
-    -webkit-border-radius: 10px;
- 
+    padding: 40px 40px;
+    border-radius:8px 8px ;
+    box-shadow: rgba(30, 34, 40, 0.07) 0px 5px 35px 0px
 }
-.cards i{
-    font-size: 40px;
-    padding: 10px 30px;
+.card-body .icon{
+    font-size: 30px;
+    margin-bottom :10px;
 }
-.cards h4{
-padding: 10px 10px;
+.card-body h4{
 font-weight: 600;
+height :29px;
+letter-spacing :normal;
+line-height: 29px;
+margin-bottom :10px;
 }
-.cards p{
-    padding:10px 0;
+.card-body p{
+font-weight: 500;
+line-height: 28.9px;
+margin-bottom: 10px;
 }
-.link{
-    position: relative; 
+.fa-arrow-right{
+    margin-left: 5px;
+    font-size: 14px;
+}
+ .link{
     font-weight: 600;
+    line-height: 28.9px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    position: relative;
+    transition: all 0.3s;
     cursor: pointer;
-    transition: border-bottom 0.2s ease;
-  
+
+    }
+ .link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;}
+
+.link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+
+
+.why-us-wrapper{
+    text-align: center;
 }
-
-.cards a:hover{
-        border-bottom: 1px solid ; }
-  
-
-
-.link i{
-    font-size: 12px;
-    padding: 5px;
-    
-  
+.why-us-wrapper h3{
+    padding: 10px 200px;
+    position: relative; 
+    display: inline-block; 
 }
+.why-us-wrapper h3::after {
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    top: 60px; 
+    right: 330px; 
+    background-image: url(../images/line.svg); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 25%; 
+    height: 6%;
+}
+.grid{
+    padding: 50px 50px;
+}
+.box{
+    width: 300px;
+    height: 129px;
+    text-align: start;
+    cursor: pointer;
+}
+.box h4{
+   font-weight: 600;
+   line-height: 29px;
+   margin-bottom :5px
+}
+.box p{
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom :5px;
+    font-weight: 500;
+ }
+.box i{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.text{
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box:hover{
+    background-color: var(--text-color);
 
+}
 
 
  @media screen and (max-width: 768px) {
-   
-   .list{
+.list1{
+display: none;
+}
+.list2{
     display: none;
-   }
-   .header-wrapper figure{
-    justify-content: flex-start;
-    padding: 0 30px;
     }
-   
-    .banner-wrapper p{
-        padding: 20px 140px;
- }
+.bar{
+    display:inline-block;
+    font-size: 24px;
+    transform:translateX(30px) ;
+    -webkit-transform:translateX(30px) ;
+    -moz-transform:translateX(30px) ;
+    -ms-transform:translateX(30px) ;
+    -o-transform:translateX(30px) ;
+}
+.banner-wrapper button{
+ margin-bottom: 50px;
+}
+.header-wrapper{
+ margin-left: 20px;
+}
+.banner-wrapper h1{
+padding-left: 25%;
+padding-right: 25%;
+padding-bottom: 20px;
+padding-top: 20px;
+
+}
 .banner-wrapper h1::after {
-    bottom: 10px; 
-    right: 220px; 
+    bottom: 20px; 
+    right: 240px; 
+    height: 4%;
 }
-.grid-wrapper{
-    padding: 20px 80px;
+.banner-wrapper p{
+  padding-left:20%;
+  padding-right:20%;
+  padding-top: 0;
+  padding-bottom: 20px;
+  
+
+}
+.card{
+    width: 350px;
+
+}
+.why-us-wrapper h3{
+    padding: 10px 0;}
+    .why-us-wrapper h3::after {
+        top: 50px; 
+        right: 200px;}
 }
 
-} 
+
 @media screen and (max-width: 425px) {
-   
-    .btn{
-        padding: 18px 10px;
-    }
-    .banner-wrapper h1{
-        padding: 0 50px;
-       
-    }
+.btn{
+ padding: 18px 10px;
+}
+.banner-wrapper h1{
+padding: 0 50px;
+}
+.banner-wrapper p{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top: 5%;
 
-    .banner-wrapper p{
-        padding: 20px 40px;
+
  }
  .banner-wrapper h1::after {
     bottom: 0px; 
     right: 90px; 
+    height: 4%;
+    width: 22%;
 }
 .banner-wrapper{
-  
-    padding: 25% 0;
+padding: 25% 0;
 } 
+.why-us-wrapper h3::after {
+        top: 50px; 
+        right: 30px;}
 }
