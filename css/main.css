@@ -1,8 +1,4 @@
-.sticky {
-    position: fixed;
-    top: 70;
-    width: 100%;
-  }
+
 .header-wrapper{
 margin-left: 60px;
 margin-right: 60px;
@@ -55,7 +51,7 @@ padding-right :15px;
    position: relative;
    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 88%, 83% 100%, 21% 100%, 0 89%, 0 0);
    z-index: -1; 
-   min-height: 100vh;
+   
 }
 .banner-wrapper{
     text-align: center;
@@ -285,7 +281,7 @@ text-align: center;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin: 40px 40px;
+    margin: 40px 20px;
     font-size: 33px;
     text-align: center;
 }
@@ -369,12 +365,16 @@ padding-top: 20px;
 }
 
 
+
 @media screen and (max-width: 425px) {
 .btn{
  padding: 18px 10px;
 }
 .banner-wrapper h1{
-padding: 20px 50px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+
 }
 .banner-wrapper p{
     padding-left:10%;
@@ -384,8 +384,8 @@ padding: 20px 50px;
 
  }
  .banner-wrapper h1::after {
-    bottom: 0px; 
-    right: 90px; 
+    bottom: 20px; 
+    right: 60px; 
     height: 4%;
     width: 22%;
 }
@@ -401,5 +401,12 @@ padding: 25% 0;
         }
         .ideas-text{
             padding: 30px 10px;
+        }
+        .box{
+            height: 229px;
+        }
+        .ideas-text{
+            padding-left: 20px;
+            padding-right: 20px;
         }
 }
