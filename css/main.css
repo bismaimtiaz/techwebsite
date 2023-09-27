@@ -269,8 +269,27 @@ margin-bottom :15px;
     font-weight: 500;
     line-height :28.9px;
     margin-bottom :15px;
-    
     }
+    .time-section h3{
+        padding-top: 20px;
+    }
+.progress h4 {
+text-align: center;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 40px 40px;
+    font-size: 33px;
+    text-align: center;
+}
+
 
 
  @media screen and (max-width: 768px) {
@@ -337,6 +356,15 @@ padding-top: 20px;
 }
 .ideas-text{
     padding: 30px 100px;
+}
+.time-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.progress{
+    flex-direction: column;
 }
 }
 
