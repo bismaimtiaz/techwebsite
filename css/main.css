@@ -54,7 +54,8 @@ padding-right :15px;
     -moz-border-radius: 0 0 25% 25%;
     -ms-border-radius: 0 0 25% 25%;
     -o-border-radius: 0 0 25% 25%;
-    margin-bottom:-100px ;
+    margin-bottom:-150px ;
+    height: 700px;
 }
 .banner-wrapper{
     text-align: center;
@@ -113,10 +114,9 @@ color: var(--text-color);
     background-color: var(--text-color);
     border-radius:8px 8px ;
     box-shadow: rgba(30, 34, 40, 0.07) 0px 5px 35px 0px;
-   
     padding:20px 40px ;
     margin-bottom: 20px;
-
+    height: 300px;
 }
 .card-body .icon{
     font-size: 30px;
@@ -200,9 +200,7 @@ margin-bottom: 10px;
     margin-bottom: 10px;
     width: 300px;
 }
-.active{
-    background-color: var(--grey);
-}
+
 .box h4{
    font-weight: 600;
    line-height: 29px;
@@ -230,16 +228,23 @@ margin-bottom: 10px;
     background-color: var(--grey);
 }
 /* ideas section */
-.bg{ 
-    border-radius: 50%; 
+.bg{
+    border-radius: 50%;
     background-color: rgb(251, 228, 241);
-     width: 20px; height: 20px; 
-     text-align: center; 
-     padding: 5px; 
+    width: 12px;
+    height: 12px;
+    text-align: center;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.bg i{
+    margin: 2px 2px;
 }
 .ideas-text{
-   padding-left: 30px;
-   padding-top: 20px;
+   padding-left: 50px;
    padding-right: 10px
 }
 .ideas-text h4{
@@ -274,33 +279,47 @@ margin-bottom :15px;
 }
 
 .ideas-wrapper img{
-   
-    height: 410px;
-   max-width:100% ;
+   height: 380px;
+   margin-top: 15px;
+   max-width:98% ;
+   border-radius:9px ;
+  
+
 }
 .ideas-text p{
  
     font-weight: 500;
     line-height :28.9px;
-    margin-bottom :15px;
+    margin-bottom :20px;
     }
     /* feedback */
 .feedback{
     background-color: 	#F0F0F0;
-    padding: 0 100px;
+    padding-top: 78px ;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .time-section{
+    text-align: center;
     
     padding-bottom: 350px;
     margin-bottom: -200px;
 }
 .time-section h2{
     padding-top: 80px;
+    font-weight: 600
 }
     .time-section h3{
         padding-top: 20px;
+        font-weight: 500;
+        padding:0 100px;
     }
-
+.progress{
+    overflow: hidden;
+    height: 100px;
+    margin-top: 100px;
+   
+}
 .progress h4 {
 text-align: center;
 padding-top: 80px;
@@ -311,6 +330,7 @@ font-size: 24px;
     width: 200px;
     height: 200px;
     position: relative;
+    
   
 }
 
@@ -321,9 +341,10 @@ font-size: 24px;
     border-top: 10px solid var(--orange-color);
    border-radius: 50%;
     position: absolute;
-    top: 50px;
+    top: 0;
     left: 0;
     animation: circle-progress-animation 2s linear forwards;
+    margin-left: 50px;
  
 }
 
@@ -334,8 +355,8 @@ font-size: 24px;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
-    left:0;
+    top: -10px;
+    left:50px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -367,6 +388,7 @@ font-size: 24px;
 }
 .feedback-wrapper img{
     max-width: 100%;
+    height:510px;
 
 }
 .stars{
@@ -380,7 +402,7 @@ font-size: 18px
     font-weight: 500;
     line-height: 35.7px;
     margin-bottom: 20px;
-    text-align: center;
+   text-align: center;
     padding: 20px 100px;
 }
 .feedback-text h5{
@@ -393,26 +415,42 @@ font-size: 18px
 }
 /* projects css */
 .projects{ 
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 .project-wrapper{
     text-align: center;
 }
 .project-wrapper h3{
-    padding: 10px 200px;
+    padding: 10px 150px;
     position: relative; 
     display: inline-block; 
+    font-weight: 600;
 }
 .project-display h4{
     font-size:clamp(10px,5vw ,20px);
     font-weight: 600;
 }
-.project-display img{
+.project-display p{
+    font-weight: 500;
+}
+.project img{
     max-width: 90%;
     padding-top: 40px;
     padding-bottom: 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
 }
+.project img:hover{
+opacity: 0.6};
+
+
 
 /* footer css */
 .list{
@@ -426,6 +464,7 @@ font-size: 18px
     padding-right: 25px;
     line-height:28.9px;
     cursor: pointer;
+    font-weight: 500;
 }
 .social-links{
     gap:10px;
@@ -454,15 +493,18 @@ font-size: 18px
    -o-border-radius: 10px 0 0 10px;
    padding-left: 10px;
    padding-top: 30px;
+   margin-top: 20px;
+
 }
 .signup p{
-    padding-top: 10px;
+    padding:20px 0;
     line-height:28.9px;
+    font-weight: 600;
    
 }
 .signup button{
     padding: 8px 10px;
-    background-color: var(--accent-color);
+    background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
     border: none;
     box-shadow: rgba(30, 34, 40, 0.07) 0px 5px 35px 0px;
     color: var(--text-color);
@@ -472,6 +514,7 @@ font-size: 18px
     -ms-border-radius: 0 10px 10px 0;
     -o-border-radius: 0 10px 10px 0;
     cursor: pointer;
+    margin-top: 20px;
 }
 .signup button:hover{
     opacity: 0.7;
@@ -482,7 +525,7 @@ font-size: 18px
 }
 /* community*/
 .community-wrapper{
-    background-image: url(../images/bg1.png);
+    background: linear-gradient(91.1deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(231, 75, 184) 103.4%); 
     color: var(--text-color);
     text-align: center;
     border-radius: 15px;
@@ -495,15 +538,17 @@ font-size: 18px
     color: var(--text-color);
 }
 .community-wrapper h3{
-    padding: 10px 200px;
+    padding: 10px 150px;
     position: relative; 
-    display: inline-block; 
+    display: inline-block;
+    font-weight: 500; 
 }
 .community-wrapper button{
     border-radius: 8px;
-    font-weight: 600;
-    border:none;
+    font-weight: 500;
     background-color: var(--text-color);
+    border:none;
+    color: var(--primary-color);
     margin-bottom: 20px;
     margin-top: 10px;
     transition: transform 0.6s all ease-in-out;
@@ -697,4 +742,29 @@ padding: 25% 0;
         .social-links{
            padding-left: 100px;
         }
-}
+        .padding-100px{
+            padding: 50px 0px;
+        
+        }
+        .projects{ 
+            padding-top: 80px;
+           
+        }
+        .feedback-text .paragraph {
+
+            padding: 0px 50px;
+        }
+        .stars {
+            margin-top: 50px;}
+            .time-section h3{
+   
+                padding:0 0;
+            }
+            .feedback{
+                background-color: 	#F0F0F0;
+                padding-top: 18px ;
+                padding-left: 40px;
+                padding-right: 40px;
+            }}
+           
+            
