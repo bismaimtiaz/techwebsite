@@ -24,7 +24,7 @@
     --h3:clamp(20px,5vw,42px);
     --h4:clamp(16px,1vw,20px);
     --h5:19px;
-    --p:17px;
+    --p:clamp(10px ,5vw,17px);
     --btn:17px;
 
 }

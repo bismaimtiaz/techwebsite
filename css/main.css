@@ -110,8 +110,8 @@ color: var(--text-color);
     background-color: var(--text-color);
     border-radius:8px 8px ;
     box-shadow: rgba(30, 34, 40, 0.07) 0px 5px 35px 0px;
-    padding:20px 40px ;
-    margin-bottom: 20px;
+    padding:10px 40px ;
+    margin-bottom: 10px;
     height: 300px;
 }
 .card-body .icon{
@@ -258,6 +258,7 @@ font-weight: 600;
 line-height :36.45px;
 margin-bottom :15px;
 
+
 }
 .ideas-text button{
     background-color: var(--accent-color);
@@ -320,68 +321,7 @@ margin-bottom :15px;
         font-weight: 600;
         padding:0 100px;
     }
-/* .progress{
-    overflow: hidden;
-    height: 100px;
-    margin-top: 100px;
-   
-}
-.progress h4 {
-text-align: center;
-padding-top: 80px;
-font-size: 24px;
-}
-.circle-progress {
 
-    width: 200px;
-    height: 200px;
-    position: relative;
-    
-  
-}
-
-.circle-progress-bar {
-    width: 100%;
-    height: 100%;
-    border: 10px solid #ccc;
-    border-top: 10px solid var(--orange-color);
-   border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: circle-progress-animation 2s linear forwards;
-    margin-left: 50px;
- 
-}
-
-.circle-text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -10px;
-    left:50px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-@keyframes circle-progress-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    95% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-}
-    100% {
-        transform: rotate(360deg);
-    }
-} */
 
 .feedback-wrapper{
     background-color: var(--text-color);
@@ -434,15 +374,22 @@ font-size: 18px
     padding: 10px 150px;
 
     font-weight: 600;
+    
 }
 .project-display h4{
     font-size:clamp(10px,5vw ,20px);
     font-weight: 600;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.project-display h4:hover{
+   color: var(--purple-color);
 }
 .project-display p{
     font-weight: 600;
     font-size: 15px;
     padding-top: 10px;
+    padding-left: 10px;
 }
 .project img{
     max-width: 90%;
@@ -513,8 +460,7 @@ opacity: 0.6};
    -ms-border-radius: 10px 0 0 10px;
    -o-border-radius: 10px 0 0 10px;
    padding-left: 10px;
-   padding-top: 30px;
-   margin-top: 20px;
+ margin-top: 10px;
 
 }
 .signup p{
@@ -524,7 +470,7 @@ opacity: 0.6};
    
 }
 .signup button{
-    padding: 8px 10px;
+    padding: 8px 15px;
     background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
     border: none;
     box-shadow: rgba(30, 34, 40, 0.07) 0px 5px 35px 0px;
@@ -534,8 +480,10 @@ opacity: 0.6};
     -moz-border-radius: 0 10px 10px 0;
     -ms-border-radius: 0 10px 10px 0;
     -o-border-radius: 0 10px 10px 0;
+    font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
+    transition: 0.6s;
 }
 .signup button:hover{
     opacity: 0.7;
@@ -581,7 +529,7 @@ opacity: 0.6};
 /* DIFFERNCE SECTION */
  .image1 img{
     max-width: 96.5%;
-    border-radius: 10px 10px 10px 10px;
+    /* border-radius: 10px 10px 10px 10px; */
     padding-bottom: 20px;
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -590,7 +538,7 @@ opacity: 0.6};
 }
 .image2 img{
     max-width: 49%;
-    border-radius: 10px 10px 10px 10px;
+    /* border-radius: 10px 10px 10px 10px; */
     padding-right: 10px;
  
     -webkit-transition: .3s ease-in-out;
@@ -660,6 +608,7 @@ opacity: 0.6};
             -ms-transform:translateX(30px) ;
             -o-transform:translateX(30px) ;
   }
+ 
 }
 
 
@@ -703,12 +652,12 @@ padding-top: 20px;
 
 }
 .card-wrapper{
-    padding: 0 50px;
+    padding: 0 20px;
     
     
 }
 .card-wrapper .card-body{
-    flex: 50%;
+    flex: 46%;
 }
 .why-us-wrapper h3{
     padding: 10px 0;}
@@ -764,30 +713,33 @@ padding-top: 20px;
     .container{
         max-width: 390px;
     }
+    .card-wrapper .card-body{
+        flex: 50%;
+    }
 .btn{
  padding: 18px 10px;
 }
 .banner-wrapper h1{
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 40px;
+padding-right: 40px;
 padding-top: 50px;
 
 }
 .banner-wrapper p{
     padding-left:10%;
     padding-right:10%;
-    padding-top: 5%;
+    padding-top: 10px;
 
 
  }
  .banner-wrapper h1::after {
     bottom: 20px; 
-    right: 100px; 
+    right: 90px; 
     height: 4%;
     width: 22%;
 }
 .banner-wrapper{
-padding: 25% 0;
+padding: 30% 0;
 } 
 
 .why-us-wrapper h3::after {
@@ -825,7 +777,7 @@ padding: 25% 0;
        
        
         .input{
-            margin-left: 80px;
+            margin-left: 70px;
             margin-top: 10px;
             
            
@@ -847,8 +799,11 @@ padding: 25% 0;
         }
         .stars {
             margin-top: 50px;}
+            .feedback-text h5{
+            padding: 20px o;
+            }
             .job-title{
-                padding-bottom: 20px;
+                padding: 10px 0;
              
             }
             .time-section h3{
@@ -871,8 +826,8 @@ padding: 25% 0;
                 padding-left: 15px;
             }
             .image2 img{
-                max-width: 95%;
-            padding-bottom: 10px;}
+                max-width: 100%;
+            padding-bottom: 20px;}
             .section-text{
                 text-align: justify;
                 padding-left: 15px;
@@ -884,12 +839,19 @@ padding: 25% 0;
             .grid-display p{
           
                padding-bottom :50px;
+               padding-right: 10px;
                
              }
             .padding-bottom{padding-bottom: 0;}
             .project-wrapper{
                 text-align: center;
             }
-        }
+            .ideas-text h4{
+               margin-top: 20px;
+                }
+                .list p {
+               
+                 padding-right:0;
+           }
            
-            
+        }
