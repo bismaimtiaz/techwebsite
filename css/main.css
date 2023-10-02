@@ -367,11 +367,11 @@ font-size: 18px
     padding-top: 150px;
     padding-bottom: 50px;
 }
-.project-wrapper{
-    text-align: justify;
-}
+
 .project-wrapper h3{
     padding: 10px 150px;
+    text-align: center;
+  
 
     font-weight: 600;
     
@@ -448,6 +448,7 @@ opacity: 0.6};
 .contact-list a{
    list-style: none;
    color: var(--secondary-color);
+   text-decoration: none;
 }
 .signup input{
    height: 55px;
