@@ -419,10 +419,13 @@ opacity: 0.6};
 }
 .list p{
     padding-bottom: 10px;
-    padding-right: 25px;
+
     line-height:28.9px;
     cursor: pointer;
     font-weight: 500;
+}
+.contact-list>p{
+    padding-right:20 px;
 }
 .social-links{
     gap:10px;
