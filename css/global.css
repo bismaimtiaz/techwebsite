@@ -19,12 +19,12 @@
     --grey:#D8D8D8;
 
     --Urbanist: "Urbanist", sans-serif;
-    --h1:clamp(33px,5vw,60px);
+    --h1:60px;
     --h2:16px;
-    --h3:clamp(20px,5vw,42px);
-    --h4:clamp(16px,1vw,20px);
+    --h3:42px;
+    --h4:20px;
     --h5:19px;
-    --p:clamp(10px ,5vw,17px);
+    --p:17px;
     --btn:17px;
 
 }
@@ -67,7 +67,7 @@ a{
     font-size:clamp(12px,5vw,17px)
 }
 .btn{
-    padding: 20px 24px;
+    padding: 14px 24px;
     font-size: var(--btn);
     cursor: pointer;
     border: none;
